@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kamil Kadir | Data Analytics Portfolio</title>
+
+<style>
+
+:root{
+--primary:#4f46e5;
+--dark:#111827;
+--light:#f9fafb;
+--text:#374151;
+}
+
+body{
+margin:0;
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto;
+background:var(--light);
+color:var(--text);
+}
+
+.dark{
+background:#0f172a;
+color:#e5e7eb;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:20px;
+}
+
+/* NAV */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 20px;
+background:white;
+box-shadow:0 3px 10px rgba(0,0,0,0.05);
+position:sticky;
+top:0;
+z-index:10;
+}
+
+.dark nav{
+background:#1e293b;
+}
+
+nav ul{
+display:flex;
+gap:20px;
+list-style:none;
+padding:0;
+}
+
+nav a{
+text-decoration:none;
+color:inherit;
+font-size:14px;
+}
+
+.logo{
+font-weight:700;
+font-size:18px;
+color:var(--primary);
+}
+
+/* HERO */
+
+.hero{
+padding:80px 20px;
+text-align:center;
+}
+
+.hero h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.hero p{
+max-width:650px;
+margin:auto;
+font-size:18px;
+opacity:0.9;
+}
+
+.hero button{
+margin-top:25px;
+padding:12px 20px;
+border:none;
+background:var(--primary);
+color:white;
+border-radius:6px;
+cursor:pointer;
+}
+
+/* SECTION */
+
+section{
+padding:60px 20px;
+}
+
+.section-title{
+font-size:28px;
+margin-bottom:30px;
+text-align:center;
+}
+
+/* GRID */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,0.05);
+}
+
+.dark .card{
+background:#1e293b;
+}
+
+/* SKILLS */
+
+.skill{
+margin-bottom:15px;
+}
+
+.bar{
+height:8px;
+background:#e5e7eb;
+border-radius:10px;
+margin-top:5px;
+}
+
+.fill{
+height:8px;
+background:var(--primary);
+border-radius:10px;
+}
+
+/* PROJECT */
+
+.project{
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+/* FOOTER */
+
+footer{
+background:#111;
+color:#aaa;
+text-align:center;
+padding:30px;
+margin-top:40px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:30px;
+}
+
+nav ul{
+display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<nav>
+
+<div class="logo">Kamil Kadir</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#learning">Learning</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+<button onclick="toggleTheme()">🌙</button>
+
+</nav>
+
+
+<section class="hero">
+
+<h1>Business Intelligence & Data Analytics</h1>
+
+<p>
+Transforming operational data into actionable insights through analytics,
+automation, and modern data solutions.
+</p>
+
+<button>Download Resume</button>
+
+</section>
+
+
+
+<section id="about" class="container">
+
+<h2 class="section-title">About Me</h2>
+
+<div class="card">
+
+<p>
+Results-driven Business Intelligence & Data Analyst Lead specializing in
+data analytics, reporting automation, and dashboard development.
+Experienced in transforming operational data into insights that support
+business decisions and operational efficiency.
+</p>
+
+<p>
+My work focuses on building scalable analytics solutions, optimizing
+reporting frameworks, and enabling data-driven cultures within
+organizations.
+</p>
+
+</div>
+
+</section>
+
+
+
+<section id="skills" class="container">
+
+<h2 class="section-title">Skills</h2>
+
+<div class="card">
+
+<div class="skill">
+Excel / Power Query
+<div class="bar"><div class="fill" style="width:95%"></div></div>
+</div>
+
+<div class="skill">
+Power BI
+<div class="bar"><div class="fill" style="width:90%"></div></div>
+</div>
+
+<div class="skill">
+SQL / MySQL
+<div class="bar"><div class="fill" style="width:80%"></div></div>
+</div>
+
+<div class="skill">
+Python (Pandas)
+<div class="bar"><div class="fill" style="width:65%"></div></div>
+</div>
+
+<div class="skill">
+Power Apps / Power Automate
+<div class="bar"><div class="fill" style="width:75%"></div></div>
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="projects" class="container">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="grid">
+
+<div class="card project">
+
+<h3>Operational BI Dashboard</h3>
+
+<p>
+Power BI dashboards designed for KPI monitoring,
+SLA tracking and operational performance insights.
+</p>
+
+</div>
+
+<div class="card project">
+
+<h3>Forecasting & Staffing Model</h3>
+
+<p>
+Analytics models used to estimate staffing demand
+and forecast operational workload.
+</p>
+
+</div>
+
+<div class="card project">
+
+<h3>Reporting Automation</h3>
+
+<p>
+Automated Excel and Power BI reporting workflows
+that reduce manual effort and improve data accuracy.
+</p>
+
+</div>
+
+<div class="card project">
+
+<h3>Power Apps Business Tools</h3>
+
+<p>
+Internal business tools developed using Power Apps
+and Power Automate.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="learning" class="container">
+
+<h2 class="section-title">Current Learning Journey</h2>
+
+<div class="card">
+
+<ul>
+
+<li>Data Engineering concepts</li>
+<li>ETL pipelines and data workflows</li>
+<li>Advanced SQL optimization</li>
+<li>REST API integration</li>
+<li>Python data processing</li>
+<li>End-to-end analytics solutions</li>
+
+</ul>
+
+</div>
+
+</section>
+
+
+
+<section id="contact" class="container">
+
+<h2 class="section-title">Contact</h2>
+
+<div class="card">
+
+<p>If you would like to collaborate or discuss analytics projects:</p>
+
+<p>Email: your@email.com</p>
+
+<p>LinkedIn: linkedin.com/in/yourprofile</p>
+
+</div>
+
+</section>
+
+
+
+<footer>
+
+<p>© 2026 Kamil Kadir</p>
+<p>Data Analytics | Business Intelligence | Automation</p>
+
+</footer>
+
+
+
+<script>
+
+function toggleTheme(){
+
+document.body.classList.toggle("dark");
+
+}
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+
+anchor.addEventListener("click", function(e){
+
+e.preventDefault();
+
+document.querySelector(this.getAttribute("href")).scrollIntoView({
+behavior:"smooth"
+});
+
+});
+
+});
+
+</script>
+
+
+</body>
+</html>
